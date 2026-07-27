@@ -1,0 +1,21 @@
+version: 2
+
+models:
+  - name: transform
+    description: "Table transformée des trajets de taxis jaunes"
+
+    columns:
+      - name: passenger_count
+        description: "Nombre de passagers"
+        tests:
+          - not_null
+
+      - name: payment_method
+        description: "Méthode de paiement"
+        tests:
+          - not_null
+
+      - name: trip_duration_minutes
+        description: "Durée du trajet en minutes"
+        tests:
+          - not_null

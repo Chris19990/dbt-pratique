@@ -1,0 +1,7 @@
+Projet:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: "/home/ks_data/dbt-pratique/output/transformed_data.db"
+      schema: main
